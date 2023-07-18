@@ -6,6 +6,6 @@
     "http": "^0.0.1-security"
   },
   "scripts": {
-  "build": "node build.js"
+  "build": "npm run build"
  }
 }
