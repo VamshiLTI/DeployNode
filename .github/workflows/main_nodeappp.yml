@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run NodeServer # Replace with your build command if needed
+        run: npm run package-lock.json  # Replace with your build command if needed
 
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
