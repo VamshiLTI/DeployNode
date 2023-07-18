@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm build NodeServer # Replace with your build command if needed
+        run: npm build # Replace with your build command if needed
 
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
